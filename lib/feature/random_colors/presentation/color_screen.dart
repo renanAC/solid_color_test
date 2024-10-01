@@ -37,23 +37,21 @@ class _ColorScreenState extends State<ColorScreen> {
   }
 
   void updateColor() {
-    setState(() {
-      randomColor = getRandomColor();
-    });
+    setState(() => randomColor = getRandomColor());
     if (randomColor != null) {
       _lastColorsBloc.addNewColor(randomColor!);
     }
   }
 
   Color getRandomColor() {
-    final int r = getRandomValue();
-    final int g = getRandomValue();
-    final int b = getRandomValue();
+    final int r = getRandomRGBValue();
+    final int g = getRandomRGBValue();
+    final int b = getRandomRGBValue();
 
     return Color.fromRGBO(r, g, b, 1);
   }
 
-  int getRandomValue() {
-    return Random().nextInt(225);
+  int getRandomRGBValue() {
+    return Random().nextInt(255);
   }
 }
