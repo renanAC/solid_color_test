@@ -2,7 +2,7 @@ import 'package:colors_flutter/feature/last_colors/presentation/store/last_color
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-///  This widget is a Screen with all colors that was showed on the 'Hello Word'
+///  This widget is a Screen with all colors that was showed on the 'Hello There'
 ///  Should use this widget inside LastColorsProvider
 class LastColorsScreen extends StatelessWidget {
   /// LastColorsScreen constructor
